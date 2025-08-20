@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- tag que habilita o site ser aberto a diferentes dispositivos-->
+   <meta name="auther" content="Ivan">
+   <meta name="description" content="Site com o proposito de explicar o HTML como ao todo.">
+   <title>Introdução ao HTML</title>
+
+   <link rel="shortcut icon" href="../Arquivos/transferir (2).jpg type=" type="/x-icon">
+
+   <!--atributo rel indica a relação-->
+   <!--atributo href a referencia, ou seja, a inincialização-->
+   <link rel="stylesheet" href="../Estilização/style.css">
+
+</head>
+
+<body>
+
+   <!--Linkando inline ou melhor direto na tag-->
+   <h1 style="">Tela principal sobre ingressos da NBA</h1> <!--h1 por boas praticas so chamamos somente 1 vez-->
+
+  
+  
+   <header id="cabecalho">
+      <img id="logo" src="../arquivos/NBA.png" alt="Imagem de logo">
+
+      <nav id="nav"> <!--tamanho da div-->
+         <a href="https://nbatickets.nba.com/">Link da bilheteria</a>
+         <a href="aula1.html">Inicial</a>
+         <a href="../https://www.nba.com/news/about" download>Saiba mais</a>
+
+         </article>
+   </header>
+
+
+   <main>
+      <!-- Seção produtos amazon-->
+      <section>
+         <h2>Bilhetes</h2>
+
+         <div id="container-flex-produtos">
+
+
+
+            <!--card produto-->
+            <article class="card-Produto"> <!--tamanho da div-->
+
+               <img src="../arquivos/bilhete 2.jpg" alt="">
+               <h2>Lorem ipsum dolor sit</h2>
+               <span>Lorem, ipsum.</span>
+            </article>
+
+            <!--card produto-->
+            <article class="card-Produto"> <!--tamanho da div-->
+
+               <img src="../arquivos/bilhete 3.jpg" alt="">
+               <h2>Lorem ipsum dolor sit!</h2>
+               <span>Lorem, ipsum.</span>
+            </article>
+
+            <!--card produto-->
+            <article class="card-Produto"> <!--tamanho da div-->
+
+               <img src="../arquivos/bilhete.jpg" alt="">
+               <h2>New York VS Detroit  Lakers VS Bulls !</h2>
+               <span>Lorem, ipsum.</span>
+            </article>
+
+
+         </div>
+      </section>
+
+      <section id="container-flex-suporte">
+         <h2>Suporte ao cliente</h2>
+         <!-- tag dorm de formulário-->
+         <form>
+            <label for="">Nome completo:</label>
+            <input class="form_campos_input
+          " type="text" placeholder="Digite seu nome completo" id="campo-nomecompleto">
+
+           <!-- Quebra a linha-->
+
+            <label for="campo-email">E-mail</label>
+            <input type="email" name="" id="campo-email">
+
+           <!-- Quebra a linha-->
+
+
+            <label for="campo-senha">Senha: </label>
+            <input type="password" name="" id="campo-senha">
+
+           <!-- Quebra a linha-->
+
+
+            <label for="campo-upload">Upload: </label>
+            <input type="file" name="" id="campo-upload">
+
+          
+
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado">
+               <option value="" selected disabled> Selecione uma opção</option>
+               <option value="AC">AC</option>
+               <option value="AL">AL</option>
+               <option value="AP">AP</option>
+               <option value="AM">AM</option>
+               <option value="BA">BA</option>
+               <option value="CE">CE</option>
+               <option value="DF">DF</option>
+               <option value="ES">ES</option>
+               <option value="GO">GO</option>
+               <option value="MA">MA</option>
+               <option value="MT">MT</option>
+               <option value="MS">MS</option>
+               <option value="MG">MG</option>
+               <option value="PA">PA</option>
+               <option value="PB">PB</option>
+               <option value="PR">PR</option>
+               <option value="PE">PE</option>
+               <option value="PI">PI</option>
+               <option value="RJ">RJ</option>
+               <option value="RN">RN</option>
+               <option value="RS">RS</option>
+               <option value="RO">RO</option>
+               <option value="RR">RR</option>
+               <option value="SC">SC</option>
+               <option value="SP">SP</option>
+               <option value="SE">SE</option>
+               <option value="TO">TO</option>
+            </select>
+
+          
+
+            <input type="checkbox" name="" id="">
+            <label for="">li e concordo com os termos</label>
+
+          
+
+            <label for="">Sexo</label>
+
+          
+
+            <label for="">Feminino</label>
+            <input type="radio" name="opcao-genero" id="" value="Feminino">
+
+            <label for="">Masculino</label>
+            <input type="radio" name="opcao-genero" id="" value="Masculino">
+
+          
+            <!-- atributo required torna o campo obrigatorio-->
+
+            <label for="">Descrição</label>
+            <textarea name="" id="" required></textarea>
+
+          
+
+            <button class="button" type="submit">Enviar</button>
+            <button class="button" type="reset">Limpar</button>
+
+         </form>
+      </section>
+
+
+   </main>
+
+   <aside>
+      <nav>
+         <a href="https:">Versão 1</a>
+         <a href="https:">Versão 2</a>
+         <a href="https:">Versão 3</a>
+      </nav>
+
+   </aside>
+
+   <footer>
+      <ul>
+         <li>
+            Inicial
+            <ul>
+               <li>Sobre nós</li>
+               <li>Plano</li>
+               <li>Promoção</li>
+            </ul>
+         </li>
+      </ul>
+
+      <ol>
+         <li>html</li>
+         <li>css</li>
+      </ol>
+      <p>Direitos reservados - 2025</p>
+   </footer>
+</body>
+
+</html>
