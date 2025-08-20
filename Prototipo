@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevConnect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #3a4260;
+      color: #fff;
+    }
+
+    header {
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .profile {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .profile button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .publicacoes {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .post {
+      background-color: #6b738f;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .post-actions button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .post-actions button:hover {
+      color: #ffdd57;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>DevConnect</div>
+    <div>
+      <span>🏠</span>
+      <span>❤️</span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/NBA_2K_logo.png" alt="Perfil">
+    </div>
+  </header>
+
+  <div class="profile">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/NBA_2K_logo.png" alt="NBA 2K Oficial">
+    <h2>NBA 2K OFICIAL</h2>
+    <p>3,159 publicações • 444 seguindo • 5,4M seguidores</p>
+    <button>Editar Perfil</button>
+    <button>Sair</button>
+  </div>
+
+  <div class="publicacoes">
+    <div class="post">
+      <div class="post-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/NBA_2K_logo.png" alt="NBA 2K Oficial">
+        <strong>NBA 2K OFICIAL</strong>
+      </div>
+      <p>Estamos anunciando o lançamento do mais novo NBA2K26...</p>
+      <div class="post-actions">
+        <button onclick="curtir(this)">❤️ 2,1M</button>
+        <button>💬 Comentar</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/NBA_2K_logo.png" alt="NBA 2K Oficial">
+        <strong>NBA 2K OFICIAL</strong>
+      </div>
+      <p>Em breve teremos novidades pra vocês que gostaram do NBA2K25...</p>
+      <div class="post-actions">
+        <button onclick="curtir(this)">❤️ 1,8M</button>
+        <button>💬 Comentar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function curtir(botao) {
+      let conteudo = botao.textContent.split(' ');
+      let num = parseFloat(conteudo[1].replace('M', '')) * 1000000;
+      num += 1; // adiciona 1 curtida
+      botao.textContent = `${conteudo[0]} ${Math.round(num / 1000)/1000}M`;
+    }
+  </script>
+</body>
+</html>

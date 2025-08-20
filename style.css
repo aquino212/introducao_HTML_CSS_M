@@ -1,0 +1,28 @@
+*{
+    font-family: 'Segoe UI'; seans-serif;
+    margin: 0;
+    margin: 0;
+}
+
+
+#Cabecalho{
+background-color: rgb(61, 95, 136);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#Cabecalho img{
+width: 40px;
+height: 40px;
+}
+
+#Cabecalho nav{
+    display: flex;
+    gap: 10px;
+}
+
+#Cabecalho > nav > a{
+color: rgb(37, 43, 56);
+
+}
